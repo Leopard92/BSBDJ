@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TabBarController.h"
 
 @interface AppDelegate ()
 
@@ -21,11 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    UITabBarController * tabbar = [[UITabBarController alloc] init];
-    UIViewController * vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor redColor];
-    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    [tabbar addChildViewController:nav];
+    TabBarController * tabbar = [[TabBarController alloc] init];
     
     self.window.rootViewController = tabbar;
     

@@ -11,6 +11,13 @@
 		2CBAB2CB20F5AFC3000AF192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBAB2CA20F5AFC3000AF192 /* Assets.xcassets */; };
 		2CBAB2CE20F5AFC3000AF192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBAB2CC20F5AFC3000AF192 /* LaunchScreen.storyboard */; };
 		2CBAB2D120F5AFC3000AF192 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBAB2D020F5AFC3000AF192 /* main.m */; };
+		2CBAB2DE20F5B698000AF192 /* EssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBAB2DD20F5B698000AF192 /* EssenceViewController.m */; };
+		2CBAB2E920F5B76A000AF192 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBAB2E820F5B76A000AF192 /* NewViewController.m */; };
+		2CBAB2EC20F5B779000AF192 /* FriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBAB2EB20F5B779000AF192 /* FriendTrendViewController.m */; };
+		2CBAB2EF20F5B782000AF192 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBAB2EE20F5B782000AF192 /* MeViewController.m */; };
+		2CBAB2F320F5B8AF000AF192 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBAB2F220F5B8AF000AF192 /* TabBarController.m */; };
+		2CBAB2F720F5BA4C000AF192 /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBAB2F620F5BA4C000AF192 /* PublishViewController.m */; };
+		2CBAB2FF20F5F0C8000AF192 /* UIImage+Render.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBAB2FE20F5F0C8000AF192 /* UIImage+Render.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +28,20 @@
 		2CBAB2CD20F5AFC3000AF192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBAB2CF20F5AFC3000AF192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CBAB2D020F5AFC3000AF192 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CBAB2DC20F5B698000AF192 /* EssenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssenceViewController.h; sourceTree = "<group>"; };
+		2CBAB2DD20F5B698000AF192 /* EssenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EssenceViewController.m; sourceTree = "<group>"; };
+		2CBAB2E720F5B76A000AF192 /* NewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		2CBAB2E820F5B76A000AF192 /* NewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
+		2CBAB2EA20F5B779000AF192 /* FriendTrendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendTrendViewController.h; sourceTree = "<group>"; };
+		2CBAB2EB20F5B779000AF192 /* FriendTrendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendTrendViewController.m; sourceTree = "<group>"; };
+		2CBAB2ED20F5B782000AF192 /* MeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		2CBAB2EE20F5B782000AF192 /* MeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		2CBAB2F120F5B8AF000AF192 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		2CBAB2F220F5B8AF000AF192 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		2CBAB2F520F5BA4C000AF192 /* PublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
+		2CBAB2F620F5BA4C000AF192 /* PublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
+		2CBAB2FD20F5F0C8000AF192 /* UIImage+Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Render.h"; sourceTree = "<group>"; };
+		2CBAB2FE20F5F0C8000AF192 /* UIImage+Render.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Render.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +74,148 @@
 		2CBAB2C020F5AFC1000AF192 /* BSBDJ */ = {
 			isa = PBXGroup;
 			children = (
+				2CBAB2DA20F5B627000AF192 /* Essence */,
+				2CBAB2E320F5B70A000AF192 /* New */,
+				2CBAB2F020F5B7DD000AF192 /* Publish */,
+				2CBAB2E120F5B6F5000AF192 /* FriendTrend */,
+				2CBAB2E220F5B700000AF192 /* Me */,
+				2CBAB2D920F5B5CF000AF192 /* Main */,
+				2CBAB2D720F5B551000AF192 /* AppDelegate */,
+				2CBAB2F820F5EF81000AF192 /* Tools */,
+				2CBAB2D820F5B58B000AF192 /* Others */,
+			);
+			path = BSBDJ;
+			sourceTree = "<group>";
+		};
+		2CBAB2D720F5B551000AF192 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
 				2CBAB2C120F5AFC1000AF192 /* AppDelegate.h */,
 				2CBAB2C220F5AFC1000AF192 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2CBAB2D820F5B58B000AF192 /* Others */ = {
+			isa = PBXGroup;
+			children = (
 				2CBAB2CA20F5AFC3000AF192 /* Assets.xcassets */,
 				2CBAB2CC20F5AFC3000AF192 /* LaunchScreen.storyboard */,
 				2CBAB2CF20F5AFC3000AF192 /* Info.plist */,
 				2CBAB2D020F5AFC3000AF192 /* main.m */,
 			);
-			path = BSBDJ;
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2CBAB2D920F5B5CF000AF192 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2F120F5B8AF000AF192 /* TabBarController.h */,
+				2CBAB2F220F5B8AF000AF192 /* TabBarController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2CBAB2DA20F5B627000AF192 /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2DB20F5B669000AF192 /* Controllers */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		2CBAB2DB20F5B669000AF192 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2DC20F5B698000AF192 /* EssenceViewController.h */,
+				2CBAB2DD20F5B698000AF192 /* EssenceViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2CBAB2E120F5B6F5000AF192 /* FriendTrend */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2E520F5B74C000AF192 /* Controllers */,
+			);
+			path = FriendTrend;
+			sourceTree = "<group>";
+		};
+		2CBAB2E220F5B700000AF192 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2E620F5B756000AF192 /* Controllers */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		2CBAB2E320F5B70A000AF192 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2E420F5B73F000AF192 /* Controllers */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		2CBAB2E420F5B73F000AF192 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2E720F5B76A000AF192 /* NewViewController.h */,
+				2CBAB2E820F5B76A000AF192 /* NewViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2CBAB2E520F5B74C000AF192 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2EA20F5B779000AF192 /* FriendTrendViewController.h */,
+				2CBAB2EB20F5B779000AF192 /* FriendTrendViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2CBAB2E620F5B756000AF192 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2ED20F5B782000AF192 /* MeViewController.h */,
+				2CBAB2EE20F5B782000AF192 /* MeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2CBAB2F020F5B7DD000AF192 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2F420F5BA19000AF192 /* Controllers */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		2CBAB2F420F5BA19000AF192 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2F520F5BA4C000AF192 /* PublishViewController.h */,
+				2CBAB2F620F5BA4C000AF192 /* PublishViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2CBAB2F820F5EF81000AF192 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2F920F5EF91000AF192 /* Category */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2CBAB2F920F5EF91000AF192 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2CBAB2FD20F5F0C8000AF192 /* UIImage+Render.h */,
+				2CBAB2FE20F5F0C8000AF192 /* UIImage+Render.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +287,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBAB2F720F5BA4C000AF192 /* PublishViewController.m in Sources */,
+				2CBAB2FF20F5F0C8000AF192 /* UIImage+Render.m in Sources */,
+				2CBAB2F320F5B8AF000AF192 /* TabBarController.m in Sources */,
+				2CBAB2EF20F5B782000AF192 /* MeViewController.m in Sources */,
+				2CBAB2DE20F5B698000AF192 /* EssenceViewController.m in Sources */,
 				2CBAB2D120F5AFC3000AF192 /* main.m in Sources */,
 				2CBAB2C320F5AFC1000AF192 /* AppDelegate.m in Sources */,
+				2CBAB2E920F5B76A000AF192 /* NewViewController.m in Sources */,
+				2CBAB2EC20F5B779000AF192 /* FriendTrendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +430,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57X85VP9WN;
-				INFOPLIST_FILE = BSBDJ/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BSBDJ/Others/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -287,7 +449,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57X85VP9WN;
-				INFOPLIST_FILE = BSBDJ/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BSBDJ/Others/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

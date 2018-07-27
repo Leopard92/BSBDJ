@@ -13,8 +13,11 @@
 #import "MeViewController.h"
 #import "PublishViewController.h"
 #import "UIImage+Render.h"
+#import "NavigationViewController.h"
 
 @interface TabBarController ()
+
+@property (nonatomic, weak) UIButton * plusButton;
 
 @end
 
@@ -30,11 +33,10 @@
     [item setTitleTextAttributes:attr forState:UIControlStateNormal];
     
     /*
-     
      appearance
      1.谁可以使用appearance 必须遵守UIAppearance协议，实现协议方法
-     2.使用appearance,可以设置任何属性
-     
+     2.使用appearance,可以设置任何属性 不可以
+     3.如果通过appearance设置属性，必须要在显示之前设置
      */
     
 }
@@ -47,9 +49,27 @@
 //    }
 //}
 
+- (UIButton *)plusButton{
+    if (_plusButton == nil) {
+        // 创建加号按钮
+        UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _plusButton = btn;
+        [btn setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+        
+        // 自适应
+        [btn sizeToFit];
+
+        [self.tabBar addSubview:btn];
+    }
+    return _plusButton;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    self.plusButton.center = CGPointMake(self.tabBar.bounds.size.width * 0.5, self.tabBar.bounds.size.height * 0.5);
     
     self.tabBar.tintColor = [UIColor blackColor];
     
@@ -63,22 +83,22 @@
 - (void)addAllChildViewController{
     
     EssenceViewController * essenceVc = [[EssenceViewController alloc] init];
-    UINavigationController * essenceNav = [[UINavigationController alloc] initWithRootViewController:essenceVc];
+    NavigationViewController * essenceNav = [[NavigationViewController alloc] initWithRootViewController:essenceVc];
     [self addChildViewController:essenceNav];
     
     NewViewController * newVc = [[NewViewController alloc] init];
-    UINavigationController * newNav = [[UINavigationController alloc] initWithRootViewController:newVc];
+    NavigationViewController * newNav = [[NavigationViewController alloc] initWithRootViewController:newVc];
     [self addChildViewController:newNav];
     
     PublishViewController * publishVc = [[PublishViewController alloc] init];
     [self addChildViewController:publishVc];
     
     FriendTrendViewController * ftVc = [[FriendTrendViewController alloc] init];
-    UINavigationController * ftNav = [[UINavigationController alloc] initWithRootViewController:ftVc];
+    NavigationViewController * ftNav = [[NavigationViewController alloc] initWithRootViewController:ftVc];
     [self addChildViewController:ftNav];
     
     MeViewController * meVc = [[MeViewController alloc] init];
-    UINavigationController * meNav = [[UINavigationController alloc] initWithRootViewController:meVc];
+    NavigationViewController * meNav = [[NavigationViewController alloc] initWithRootViewController:meVc];
     [self addChildViewController:meNav];
     
 }
@@ -97,8 +117,11 @@
     nav1.tabBarItem.selectedImage = [UIImage imageNamedWithOriginal:@"tabBar_new_click_icon"];
     
     UIViewController * vc = self.childViewControllers[2];
-    vc.tabBarItem.image = [UIImage imageNamed:@"tabBar_publish_icon"];
-    vc.tabBarItem.selectedImage = [UIImage imageNamedWithOriginal:@"tabBar_publish_icon"];
+    vc.tabBarItem.enabled = NO;
+//    vc.tabBarItem.image = [UIImage imageNamed:@"tabBar_publish_icon"];
+//    vc.tabBarItem.selectedImage = [UIImage imageNamedWithOriginal:@"tabBar_publish_icon"];
+//
+//    vc.tabBarItem.imageInsets = UIEdgeInsetsMake(7, 0, -7, 0);
     
     UINavigationController * nav3 = self.childViewControllers[3];
     nav3.tabBarItem.title = @"关注";

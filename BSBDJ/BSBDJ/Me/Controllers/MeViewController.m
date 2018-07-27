@@ -7,6 +7,7 @@
 //
 
 #import "MeViewController.h"
+#import "SettingViewController.h"
 
 @interface MeViewController ()
 
@@ -17,21 +18,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self setNavBar];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setNavBar{
+    
+    self.navigationItem.title = @"我的";
+    
+    UIBarButtonItem * nightMode = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-moon-icon"] selImage:[UIImage imageNamed:@"mine-sun-icon-click"] target:self action:@selector(nightClick:)];
+    
+    UIBarButtonItem * setting = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon"] highImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(settingClick)];
+
+    self.navigationItem.rightBarButtonItems = @[setting,nightMode];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)nightClick:(UIButton *)btn{
+    btn.selected = !btn.selected;
 }
-*/
+
+- (void)settingClick{
+    SettingViewController * vc = [[SettingViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

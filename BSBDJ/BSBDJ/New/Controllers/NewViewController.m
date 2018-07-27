@@ -7,6 +7,7 @@
 //
 
 #import "NewViewController.h"
+#import "UIBarButtonItem+Item.h"
 
 @interface NewViewController ()
 
@@ -17,6 +18,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self setNavBar];
+}
+
+- (void)setNavBar{
+    
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    UIBarButtonItem * reviewItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"review_post_nav_icon"] highImage:[UIImage imageNamed:@"review_post_nav_icon_click"] target:self action:@selector(reviewClick)];
+    self.navigationItem.leftBarButtonItem = reviewItem;
+    
+    UIBarButtonItem * item = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"nav_search_icon"] highImage:[UIImage imageNamed:@"nav_search_icon_click"] target:self action:@selector(searchClick)];
+    
+    self.navigationItem.rightBarButtonItem = item;
+}
+
+- (void)reviewClick{
+    
+}
+
+- (void)searchClick{
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +47,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

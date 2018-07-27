@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2526D820F7477000DB6A47 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2526D720F7477000DB6A47 /* UIBarButtonItem+Item.m */; };
+		2C381510210AC87F0005017D /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C38150F210AC87F0005017D /* NavigationViewController.m */; };
+		2C381515210AE7E00005017D /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C381514210AE7E00005017D /* SettingViewController.m */; };
+		2C381518210AEB730005017D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C381517210AEB730005017D /* UIView+Frame.m */; };
+		2C38151B210AF1650005017D /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C38151A210AF1650005017D /* NavigationBar.m */; };
+		2C38151E210AF2B30005017D /* BackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C38151D210AF2B30005017D /* BackView.m */; };
 		2CBAB2C320F5AFC1000AF192 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBAB2C220F5AFC1000AF192 /* AppDelegate.m */; };
 		2CBAB2CB20F5AFC3000AF192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBAB2CA20F5AFC3000AF192 /* Assets.xcassets */; };
 		2CBAB2CE20F5AFC3000AF192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBAB2CC20F5AFC3000AF192 /* LaunchScreen.storyboard */; };
@@ -21,6 +27,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C2526D620F7477000DB6A47 /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		2C2526D720F7477000DB6A47 /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		2C38150D210AC05C0005017D /* BSBDJ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSBDJ.pch; sourceTree = "<group>"; };
+		2C38150E210AC87F0005017D /* NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		2C38150F210AC87F0005017D /* NavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		2C381513210AE7E00005017D /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		2C381514210AE7E00005017D /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		2C381516210AEB730005017D /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		2C381517210AEB730005017D /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		2C381519210AF1650005017D /* NavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
+		2C38151A210AF1650005017D /* NavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
+		2C38151C210AF2B30005017D /* BackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackView.h; sourceTree = "<group>"; };
+		2C38151D210AF2B30005017D /* BackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackView.m; sourceTree = "<group>"; };
 		2CBAB2BE20F5AFC1000AF192 /* BSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBAB2C120F5AFC1000AF192 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2CBAB2C220F5AFC1000AF192 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,6 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C381511210AE79A0005017D /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2C381512210AE7BC0005017D /* Controller */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		2C381512210AE7BC0005017D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C381513210AE7E00005017D /* SettingViewController.h */,
+				2C381514210AE7E00005017D /* SettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2CBAB2B520F5AFC1000AF192 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +110,7 @@
 		2CBAB2C020F5AFC1000AF192 /* BSBDJ */ = {
 			isa = PBXGroup;
 			children = (
+				2C381511210AE79A0005017D /* Setting */,
 				2CBAB2DA20F5B627000AF192 /* Essence */,
 				2CBAB2E320F5B70A000AF192 /* New */,
 				2CBAB2F020F5B7DD000AF192 /* Publish */,
@@ -103,6 +140,7 @@
 				2CBAB2CC20F5AFC3000AF192 /* LaunchScreen.storyboard */,
 				2CBAB2CF20F5AFC3000AF192 /* Info.plist */,
 				2CBAB2D020F5AFC3000AF192 /* main.m */,
+				2C38150D210AC05C0005017D /* BSBDJ.pch */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -112,6 +150,12 @@
 			children = (
 				2CBAB2F120F5B8AF000AF192 /* TabBarController.h */,
 				2CBAB2F220F5B8AF000AF192 /* TabBarController.m */,
+				2C38150E210AC87F0005017D /* NavigationViewController.h */,
+				2C38150F210AC87F0005017D /* NavigationViewController.m */,
+				2C381519210AF1650005017D /* NavigationBar.h */,
+				2C38151A210AF1650005017D /* NavigationBar.m */,
+				2C38151C210AF2B30005017D /* BackView.h */,
+				2C38151D210AF2B30005017D /* BackView.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -214,6 +258,10 @@
 			children = (
 				2CBAB2FD20F5F0C8000AF192 /* UIImage+Render.h */,
 				2CBAB2FE20F5F0C8000AF192 /* UIImage+Render.m */,
+				2C2526D620F7477000DB6A47 /* UIBarButtonItem+Item.h */,
+				2C2526D720F7477000DB6A47 /* UIBarButtonItem+Item.m */,
+				2C381516210AEB730005017D /* UIView+Frame.h */,
+				2C381517210AEB730005017D /* UIView+Frame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -288,14 +336,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CBAB2F720F5BA4C000AF192 /* PublishViewController.m in Sources */,
+				2C38151B210AF1650005017D /* NavigationBar.m in Sources */,
+				2C2526D820F7477000DB6A47 /* UIBarButtonItem+Item.m in Sources */,
+				2C38151E210AF2B30005017D /* BackView.m in Sources */,
 				2CBAB2FF20F5F0C8000AF192 /* UIImage+Render.m in Sources */,
 				2CBAB2F320F5B8AF000AF192 /* TabBarController.m in Sources */,
 				2CBAB2EF20F5B782000AF192 /* MeViewController.m in Sources */,
+				2C381518210AEB730005017D /* UIView+Frame.m in Sources */,
 				2CBAB2DE20F5B698000AF192 /* EssenceViewController.m in Sources */,
 				2CBAB2D120F5AFC3000AF192 /* main.m in Sources */,
 				2CBAB2C320F5AFC1000AF192 /* AppDelegate.m in Sources */,
 				2CBAB2E920F5B76A000AF192 /* NewViewController.m in Sources */,
 				2CBAB2EC20F5B779000AF192 /* FriendTrendViewController.m in Sources */,
+				2C381510210AC87F0005017D /* NavigationViewController.m in Sources */,
+				2C381515210AE7E00005017D /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +484,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57X85VP9WN;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BSBDJ/Others/BSBDJ.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/BSBDJ/Others/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,6 +504,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57X85VP9WN;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BSBDJ/Others/BSBDJ.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/BSBDJ/Others/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

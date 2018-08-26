@@ -10,7 +10,7 @@
 #import "NavigationBar.h"
 #import "BackView.h"
 
-@interface NavigationViewController ()
+@interface NavigationViewController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -36,11 +36,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    self.interactivePopGestureRecognizer.enabled = NO;
+    
+    id target = self.interactivePopGestureRecognizer.delegate;
+
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
+    pan.delegate = self;
+    [self.view addGestureRecognizer:pan];
     
     NavigationBar *bar = [[NavigationBar alloc] initWithFrame:self.navigationBar.frame];
+    
     [self setValue:bar forKey:@"navigationBar"];
-    
-    
+
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
@@ -58,6 +66,11 @@
 
 - (void)back{
     [self popViewControllerAnimated:YES];
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    return self.childViewControllers.count > 1;
 }
 
 - (void)didReceiveMemoryWarning {
